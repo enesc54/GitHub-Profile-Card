@@ -9,9 +9,10 @@ const twitter_btn = document.querySelector(".twitter");
 const instagram_btn = document.querySelector(".instagram");
 const github_btn = document.querySelector(".github");
 
+const username = "enesc54"
+
 const insta_url = "https://instagram.com/enes.can.54?igshid=ZDdkNTZiNTM=";
-const twitter_url =
-    "https://twitter.com/enes_can54?t=bJxrSpEblbQbOQ2p2m_h1g&s=09";
+const twitter_url = "https://twitter.com/enes_can54?t=bJxrSpEblbQbOQ2p2m_h1g&s=09";
 const github_url = "https://github.com/enesc54";
 
 async function getUser(_userName) {
@@ -36,4 +37,4 @@ async function getUser(_userName) {
     github_btn.href = github_url;
 }
 
-getUser("enesc54");
+getUser(username);
