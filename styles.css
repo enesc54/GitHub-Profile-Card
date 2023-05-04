@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+body {
+    color: white;
+    font-family: "Oswald" Sans-Serif;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg")
+        no-repeat center;
+    background-size: cover;
+}
+
+.profile-card {
+    width: 400px;
+    position: relative;
+    gap: 10px;
+    flex-direction: column;
+    border: 2px solid #ffffff40;
+    border-radius: 25px;
+    display: flex;
+    padding: 3rem 5rem;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 20px 200px -60px black;
+    
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    & .profile-photo {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        margin: 10px auto;
+    }
+
+    & .desc {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px;
+        & h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 10px;
+            & + div {
+                font-size: 20px;
+            }
+        }
+    }
+
+    & .info {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 20px;
+
+        @media screen and (max-width: 576px) {
+            gap: 15px;
+        }
+
+        & > div {
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            & *:first-child {
+                font-weight: bold;
+                font-size: 30px;
+                letter-spacing: 3px;
+                margin-bottom: 5px;
+            }
+
+            & *:last-child {
+                font-size: 14px;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    & .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        & a {
+            display: inline-flex;
+            width: 55px;
+            height: 55px;
+            margin: 15px;
+            border-radius: 40%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            flex-shrink: 0;
+            transition: all 0.2s;
+
+            @media screen and (max-width: 768px) {
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+            }
+
+            &.instagram {
+                background: linear-gradient(
+                    45deg,
+                    #405de6,
+                    #5831db,
+                    #833ab4,
+                    #c13584,
+                    #e1306c,
+                    #fd1d1d
+                );
+                box-shadow: 0px 4px 30px rgba(120, 64, 150, 0.6);
+            }
+
+            &.twitter {
+                background: linear-gradient(45deg, #1da1f2, #0e71c8);
+                box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
+            }
+
+            &.github {
+                background: linear-gradient(45deg, #333333, #626b73);
+                box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+            }
+        }
+    }
+}
