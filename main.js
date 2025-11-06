@@ -11,8 +11,8 @@ const github_btn = document.querySelector(".github");
 
 const username = "enesc54"
 
-const insta_url = "https://instagram.com/enes.can.54?igshid=ZDdkNTZiNTM=";
-const twitter_url = "https://twitter.com/enes_can54?t=bJxrSpEblbQbOQ2p2m_h1g&s=09";
+const insta_url = "https://www.instagram.com/enescxx_?igsh=MTJkMTU5ODltMWFnbA==";
+const twitter_url = "";
 const github_url = "https://github.com/enesc54";
 
 async function getUser(_userName) {
